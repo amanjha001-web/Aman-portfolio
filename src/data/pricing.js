@@ -1,0 +1,65 @@
+export const pricingPlans = [
+  {
+    id: "starter",
+    name: "Starter",
+    price: 2999,
+    currency: "₹",
+    period: "per project",
+    description: "For a simple landing page or a small business website.",
+    delivery: "3–5 working days",
+    features: [
+      "Single-page website",
+      "Responsive layout",
+      "Reusable UI components",
+      "Basic contact section",
+      "One revision round",
+    ],
+    popular: false,
+    cta: "Discuss Your Project",
+    href: "#contact",
+  },
+  {
+    id: "professional",
+    name: "Professional",
+    price: 6999,
+    currency: "₹",
+    period: "per project",
+    description:
+      "For a multi-section website with more custom UI and interactions.",
+    delivery: "7–10 working days",
+    features: [
+      "Multi-section website",
+      "Responsive design",
+      "Custom UI components",
+      "Interactive elements",
+      "API integration where scoped",
+      "Two revision rounds",
+    ],
+    popular: true,
+    cta: "Discuss Your Project",
+    href: "#contact",
+  },
+  {
+    id: "custom",
+    name: "Custom",
+    price: null,
+    currency: "₹",
+    period: "custom quote",
+    description:
+      "For full-stack applications, dashboards, and larger requirements.",
+    delivery: "Based on project scope",
+    features: [
+      "Requirement-based planning",
+      "Custom frontend development",
+      "Backend and API integration",
+      "Admin dashboard options",
+      "Milestone-based delivery",
+      "Scope-based quotation",
+    ],
+    popular: false,
+    cta: "Get a Quote",
+    href: "#contact",
+  },
+];
+
+export default pricingPlans;

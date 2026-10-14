@@ -1,0 +1,40 @@
+
+@import "tailwindcss";
+@import "./styles/animations.css";
+
+@theme {
+  --color-brand-bg: #0b1320;
+  --color-brand-surface: #111a2e;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-light: #d1a153;
+  --color-brand-red: #ff3b1d;
+  --color-brand-orange: #ff5722;
+  --color-brand-text: #f5e6ca;
+  --color-brand-muted: #94a3b8;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+
+.animate-logo-glow {
+  animation: logo-glow 3s ease-in-out infinite;
+}
+
+@keyframes logo-glow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.2));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.85));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-glow {
+    animation: none;
+  }
+}
+
